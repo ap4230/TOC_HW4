@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+# Name: 黃冠華
+# Student ID: F74001242
+# Description: it can find the highest & lowest price 
+#              of the road which sold at the most distinct year/month
 import sys
 import urllib2
 import json

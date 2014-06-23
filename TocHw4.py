@@ -30,8 +30,14 @@ for i in range(len(text)):
 
     elif text[i][argument].find(u"路") != -1:
         split = text[i][argument].find(u"路")
-        if split != 0:
-            roadName = text[i][argument][0:split+1]
+        if text[i][argument].find(u"路") == 1:
+        	if split != 0:
+            	roadName = text[i][argument][0:split+1]
+        else:
+        	index = text[i][argument][split+2:len(text[i][argument])].find(u"路")
+        	index2 = split + 2
+        	split = index + index2
+        	roadName = text[i][argument][0:split+1]
 
     elif text[i][argument].find(u"街") != -1:
         split = text[i][argument].find(u"街")

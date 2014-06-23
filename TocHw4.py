@@ -12,7 +12,7 @@ year = list()
 roadName = ""
 argument = u"土地區段位置或建物區門牌"
 
-if len(sys.argv) < 2:
+if len(sys.argv) != 2:
     print "Error in argument."
     sys.exit(0)
     

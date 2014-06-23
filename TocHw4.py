@@ -21,6 +21,8 @@ text = json.load(response)
 
 #---------------------------------------------------
 for i in range(len(text)):
+    roadName = ""
+    split = ""
     if text[i][argument].find(u"大道") != -1:
         split = text[i][argument].find(u"大道")
         if split != 0:

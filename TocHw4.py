@@ -26,7 +26,7 @@ for i in range(len(text)):
 	if text[i][argument].find(u"大道") != -1:
 		split = text[i][argument].find(u"大道")
 		if split != 0:
-			roadName = text[i][argument][0:split+1]
+			roadName = text[i][argument][0:split+2]
 	
 	elif text[i][argument].find(u"路") != -1:
 		split = text[i][argument].find(u"路")
